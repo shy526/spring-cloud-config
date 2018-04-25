@@ -1,17 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>  
-<!DOCTYPE configuration PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"      
-    "http://www.w3.org/TR/xhtml/DTD/xhtml1-transitional.dtd">    
-<configuration>  
-  <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">  
-    <layout class="ch.qos.logback.classic.PatternLayout">  
-      <pattern>%-20(%d{HH:mm:ss.SSS} [%thread]) %-5level %logger{80} - %msg%n</pattern>  
-    </layout>  
-  </appender>  
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <layout class="ch.qos.logback.classic.PatternLayout">
+      <Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</Pattern>
+    </layout>
+  </appender>
   
-  <logger name="java.sql.PreparedStatement" level="DEBUG" />  
-  <logger name="org.springframework.ui.freemarker" level="DEBUG" />  
+  <logger name="com.base22" level="TRACE"/>
   
-  <root level="INFO">  
-    <appender-ref ref="stdout" />  
-  </root>  
-</configuration>  
+
+  <root level="debug">
+    <appender-ref ref="STDOUT" />
+  </root>
+</configuration>
