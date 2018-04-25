@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>  
-<!DOCTYPE configuration>
+<!DOCTYPE configuration PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"      
+    "http://www.w3.org/TR/xhtml/DTD/xhtml1-transitional.dtd">    
 <configuration>  
   <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">  
     <layout class="ch.qos.logback.classic.PatternLayout">  
