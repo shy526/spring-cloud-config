@@ -1,5 +1,8 @@
 nginx:
   server:
     name: example.com
-
+ 
 test: app1
+spring:
+    profiles:
+      active: x1
