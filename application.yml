@@ -1,4 +1,5 @@
 nginx:
   server:
     name: example.com
-test: app
+
+test: app1
